@@ -6,6 +6,8 @@ Multiple instances of two different robot models, "robot" and "tank".
 Includes different models from the Gazebo online library. 
 Welcome message is displayed upon launch of the Gazebo world file. 
 
+![](images/gazebo_world.png)
+
 
 ## Project Folder
 
