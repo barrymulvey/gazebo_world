@@ -6,7 +6,7 @@ Multiple instances of two different robot models, "robot" and "tank".
 Includes different models from the Gazebo online library. 
 Welcome message is displayed upon launch of the Gazebo world file. 
 
-![](images/gazebo_world.png)
+![Gazebo World Screenshot](images/gazebo_world.png)
 
 
 ## Project Folder
@@ -23,29 +23,36 @@ Welcome message is displayed upon launch of the Gazebo world file.
 
 
 ## Building
+Prerequisites/Dependencies: [Gazebo](http://gazebosim.org/) and ROS. 
 
+With the prerequisites met, source global ros: 
 ```
-# Source global ros
 $ source /opt/ros/<your_ros_version>/setup.bash
-
-# Create a catkin workspace
+```
+Create a catkin workspace:
+```
 $ mkdir -p catkin_ws/src && cd catkin_ws
-
-# Clone the driver
+```
+Clone the driver:
+```
 $ git clone https://github.com/mulbarry/gazebo_world.git src/gazebo_world
-
-# Install dependencies
+```
+Install dependencies:
+```
 $ sudo apt update -qq
 $ rosdep update
 $ rosdep install --from-paths src --ignore-src -y
-
-# Build the workspace
+```
+Build the workspace:
+```
 $ catkin_make
-
-# Activate the workspace (i.e. source it)
+```
+Activate the workspace:
+```
 $ source devel/setup.bash
-
-# Launch the world file in Gazebo
-$ cd /build_world/world/           
-$ gazebo myworld  
+```
+Launch the world file in Gazebo:
+```
+$ cd /build_world/world/
+$ gazebo myworld
 ```
